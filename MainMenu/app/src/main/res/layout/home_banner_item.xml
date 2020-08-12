@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="@dimen/_120sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivSlideId"
+        app:riv_corner_radius="@dimen/_10sdp"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="clamp"
+        android:padding="@dimen/_5sdp"
+        android:scaleType="fitXY"
+        app:riv_oval="false"
+        android:src="@drawable/ic_banner_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

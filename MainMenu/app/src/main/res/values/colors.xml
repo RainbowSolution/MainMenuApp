@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B21919</color>
+    <color name="colorPrimaryDark">#B21919</color>
+    <color name="colorAccent">#B21919</color>
+    <color name="white">#ffffff</color>
+    <color name="inputColor">#383f49</color>
+    <color name="colorGray">#898989</color>
+    <color name="yellow_clr">#FF7F00</color>
+    <color name="edit_profile">#454f63</color>
+    <color name="edit_update">#18c052</color>
+</resources>

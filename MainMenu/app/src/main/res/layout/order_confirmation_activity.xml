@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/id_toolbar"
+        layout="@layout/toolbar_back_conform_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_toolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_18sdp">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSubTotalItemsId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="0.8"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center|left"
+                    android:text="Subtotal (2 item)"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSubTotalItemsPriceId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1.2"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="right"
+                    android:text="$ 70.00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/red_strip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_weight="1.5"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center|left"
+                        android:text="You Have Voucher!"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_send"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="right"
+                        android:layout_weight=".5"
+                        android:background="@drawable/red_button_shape"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text="See All"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="0.8"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center|left"
+                    android:text="Promotion Discounts"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_5sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPromotionDisouctId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1.2"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="right"
+                    android:text="$ -21.00"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_5sdp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5sp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@color/colorGray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1.4"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center|left"
+                    android:text="Pay"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="0sp"
+                    android:layout_weight="0.6"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_shape_table_category"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="$39.00"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_10sdp" />
+
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center|left"
+                android:text="Payment Card"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5sp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@color/colorGray" />
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_cart"
+                    android:layout_height="@dimen/_40sdp">
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cod"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black"
+                    android:text="Add a new card"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true" />
+
+
+
+            </LinearLayout>
+
+            <View android:layout_height="@dimen/_1sdp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/colorGray"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center|left"
+                android:text="Online Payment"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+            <View android:layout_height="@dimen/_1sdp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/colorGray"/>
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_paypa"
+                    android:layout_height="@dimen/_40sdp">
+                </androidx.appcompat.widget.AppCompatImageView>
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_arrow_black"
+                    android:layout_height="@dimen/_40sdp">
+                </androidx.appcompat.widget.AppCompatImageView>
+
+
+            </RelativeLayout>
+            <View android:layout_height="@dimen/_1sdp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorGray"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

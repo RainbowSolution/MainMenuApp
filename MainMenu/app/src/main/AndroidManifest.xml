@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alpha.mainmenu">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_final_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_final_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".authenticationModule.Splash_Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".authenticationModule.Login_Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".authenticationModule.SignUp_Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".authenticationModule.Forget_Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".authenticationModule.Otp_verification" android:screenOrientation="portrait"/>
+        <activity android:name=".food_pkg.FoodActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".restaurant_pkg.Activity_Restaurant_Details" android:screenOrientation="portrait"/>
+        <activity android:name=".history_pkg.MyHistory_Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".history_pkg.MyHistory_Details_Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".history_pkg.MyTableBook_Details_Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".user_account_pkg.ContactActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".user_account_pkg.EditProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".product_details.ProductDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".cart_pkg.CartActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".cart_pkg.OrderConformActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".product_details.ProductActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".search_pkg.SearchActivity" android:screenOrientation="portrait"/>
+    </application>
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key" />
+</manifest>

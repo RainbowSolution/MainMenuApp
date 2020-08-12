@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/id_toolbar"
+        layout="@layout/toolbar_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/id_toolbar"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_25sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. \n \n It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+            android:fontFamily="@font/poppins_regular"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/_24sdp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="Contact Form"
+            android:fontFamily="@font/poppins_regular"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieNameId"
+                android:background="@android:color/transparent"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="text"
+                style="@style/inputBoxFontStyle"/>
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_2sdp"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieEmailId"
+                android:background="@android:color/transparent"
+                android:paddingTop="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:inputType="text"
+                style="@style/inputBoxFontStyle"/>
+
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_2sdp"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieMobileId"
+                android:background="@android:color/transparent"
+                android:paddingTop="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:maxLength="10"
+                android:inputType="number"
+                style="@style/inputBoxFontStyle"/>
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_2sdp"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieMassageId"
+                android:background="@android:color/transparent"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Message"
+                android:inputType="text"
+                style="@style/inputBoxFontStyle"/>
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_2sdp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Send"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textFontWeight="600"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
