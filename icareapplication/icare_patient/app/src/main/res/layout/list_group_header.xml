@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@color/blue_clr"
+        android:layout_width="match_parent"
+        android:id="@+id/reLayoutId"
+        android:layout_height="@dimen/_40sdp">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_height="20sp"/>
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/view_bar"
+            android:background="@color/white_clr"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="match_parent">
+        </View>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lblListHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/listPreferredItemHeightSmall"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:text="@string/patient"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/icon"
+            android:textColor="@color/white_clr"
+            android:textSize="@dimen/_12sdp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:visibility="gone"
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+          android:src="@drawable/ic_arrow_back" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

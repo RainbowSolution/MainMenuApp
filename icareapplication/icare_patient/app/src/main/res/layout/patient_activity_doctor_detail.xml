@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/id_toolbar"
+        layout="@layout/app_bar_main_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_toolbar">
+
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSelectorADoctorId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="2dp"
+                app:cardBackgroundColor="@color/white_clr"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_2sdp">
+
+
+                <RelativeLayout
+                    android:id="@+id/rluserId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civProfileId"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_margin="5sp"
+                        android:src="@drawable/dummy_user"
+                        app:civ_border_color="@color/blue_clr"
+                        app:civ_border_width="@dimen/_1sdp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rldoctordetailid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_toEndOf="@+id/civProfileId"
+                        android:layout_toRightOf="@+id/civProfileId">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvdocnameid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="Dr. Rishab Kumar"
+                            android:textColor="@color/blue_clr"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvFieldId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvdocnameid"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="Dentists"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="normal" />
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvExperienceId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvFieldId"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="9 years Experience Overall"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="normal" />
+
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:id="@+id/vFirstId"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5sp"
+                        android:layout_below="@+id/rldoctordetailid"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:background="@color/view_gray_clr" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAvailableId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vFirstId"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/available_on_days"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAvailableDaysid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvAvailableId"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Monday , Tuesday"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="normal" />
+
+
+                    <View
+                        android:id="@+id/vSecondId"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5sp"
+                        android:layout_below="@+id/tvAvailableDaysid"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/view_gray_clr" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlAddressId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vSecondId"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvAddressId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Vijay Nagar"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="normal" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/tvAddressDotId"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_width="@dimen/_3sdp"
+                            android:layout_height="@dimen/_3sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/tvAddressId"
+                            android:layout_toRightOf="@+id/tvAddressId"
+                            android:src="@drawable/black_circle" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvAddressSecId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/tvAddressDotId"
+                            android:layout_toRightOf="@+id/tvAddressDotId"
+                            android:text="Dr.Rishab kumar"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="normal" />
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:id="@+id/vThirdId"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5sp"
+                        android:layout_below="@+id/rlAddressId"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/view_gray_clr" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAboutDoctorId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vThirdId"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="About:Dr.Riashab Kumar dental perfection"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="normal" />
+
+
+                    <View
+                        android:id="@+id/vFourthId"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5sp"
+                        android:layout_below="@+id/tvAboutDoctorId"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/view_gray_clr" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlConsultanyFessId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vFourthId"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvConsultancyId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/consultancy_fee"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="normal" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvFeeId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_toEndOf="@+id/tvConsultancyId"
+                            android:layout_toRightOf="@+id/tvConsultancyId"
+                            android:text="RS.500"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="normal" />
+
+                    </RelativeLayout>
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAvailableDayNameId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlConsultanyFessId"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:text="@string/available_today"
+                        android:textColor="@color/dark_green_clr"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/rlBookAppointmentId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cvSelectorADoctorId"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivCalenderId"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_calendar_book_blue" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivCalenderId"
+                    android:layout_toRightOf="@+id/ivCalenderId"
+                    android:text="@string/book_an_appointment"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlBookAppointmentId">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvAppointmentBookingId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginLeft="@dimen/_25sdp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:rotation="180"
+                    android:src="@drawable/ic_arrow_back" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

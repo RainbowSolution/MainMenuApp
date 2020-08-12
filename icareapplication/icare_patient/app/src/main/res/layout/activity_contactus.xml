@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_clr"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_toolbar"
+        layout="@layout/app_bar_main_back">
+    </include>
+
+
+    <ScrollView
+        android:layout_below="@+id/id_toolbar"
+        android:scrollbars="none"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hey, Feel free Contact Us"
+            android:textColor="@color/black_clr"
+            android:textFontWeight="600"
+            android:textSize="@dimen/_18sdp"></TextView>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColorHint="@color/black_clr"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:hint="First Name*"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black_clr"
+                    android:textColorHint="@color/black_clr"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColorHint="@color/black_clr"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:hint="Last Name*"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black_clr"
+                    android:textColorHint="@color/black_clr"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColorHint="@color/black_clr"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:hint="Email Address*"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black_clr"
+                    android:textColorHint="@color/black_clr"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColorHint="@color/black_clr"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:hint="Mobile No*"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black_clr"
+                    android:textColorHint="@color/black_clr"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColorHint="@color/black_clr"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:hint="Message*"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black_clr"
+                    android:textColorHint="@color/black_clr"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/blue_button_fill"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white_clr"
+            android:textSize="@dimen/_12sdp"></Button>
+
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

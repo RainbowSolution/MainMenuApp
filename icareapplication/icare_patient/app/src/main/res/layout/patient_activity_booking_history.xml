@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/id_toolbar"
+        layout="@layout/app_bar_main_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<LinearLayout
+    android:padding="@dimen/_20sdp"
+    android:layout_below="@+id/id_toolbar"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMyAppointmentId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:text="@string/my_appointment"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutBookingId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMyAppointmentId"
+        android:layout_marginStart="1sp"
+        android:layout_marginLeft="1sp"
+        android:minHeight="?attr/actionBarSize"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/red"
+        app:tabIndicatorHeight="5dp"
+        app:tabMode="fixed"
+        app:tabRippleColor="@color/white"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextAppearance="@style/tab_text"
+        app:tabTextColor="@color/grey" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/vpBookingHistoryId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabLayoutBookingId"
+        android:layout_marginBottom="@dimen/_7sdp" />
+</LinearLayout>
+
+</RelativeLayout>

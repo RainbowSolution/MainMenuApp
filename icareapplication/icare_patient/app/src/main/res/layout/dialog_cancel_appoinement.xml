@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white_clr"
+    app:cardCornerRadius="12sp"
+    app:cardElevation="2sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivlogoutCloseId"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_width="@dimen/_25sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_cross" />
+
+        <LinearLayout
+            android:padding="@dimen/_20sdp"
+            android:layout_below="@+id/ivlogoutCloseId"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:background="@drawable/outline_blue_circle"
+            android:id="@+id/ivlogoutImgId"
+            android:padding="@dimen/_20sdp"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_below="@+id/ivlogoutCloseId"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_delete_blue" />
+
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/id_username"
+            android:textSize="@dimen/_18sdp"
+            android:text="Cancel Appointment"
+            android:textFontWeight="600"
+            android:textColor="@color/blue_clr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp"
+                android:text="Do You Want to Cancel?"
+                android:textColor="@color/gray_clr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_cancel_booking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:background="@drawable/red_button_fill"
+                android:text="Cancel Now"
+                android:textAllCaps="false"
+                android:textColor="@color/white_clr"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_12sdp"></Button>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

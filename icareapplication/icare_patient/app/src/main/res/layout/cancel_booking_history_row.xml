@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_8sdp"
+   >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSelectorADoctorId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_1sdp"
+        app:cardBackgroundColor="#F8F8F8"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="1dp">
+
+
+        <LinearLayout
+            android:id="@+id/llDoctorRowClickId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:id="@+id/rluserId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:id="@+id/ll_cancel_appointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_toStartOf="@+id/tvDoctorFeesId"
+                        android:layout_toLeftOf="@+id/tvDoctorFeesId"
+                        android:src="@drawable/ic_delete" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDoctorFeesId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="end"
+                    android:text="Canceled"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civDoctListId"
+                    android:layout_width="@dimen/_58sdp"
+                    android:layout_height="@dimen/_58sdp"
+                    android:layout_below="@+id/ll_cancel_appointment"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/dummy_user" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rldoctordetailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_cancel_appointment"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_toEndOf="@+id/civDoctListId"
+                    android:layout_toRightOf="@+id/civDoctListId">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/TvhospitlNameId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Dr.Scott Ben"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvdestistid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TvhospitlNameId"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Cordiologist(5 years experience)"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/TvserviceId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvdestistid"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/unavailable"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="normal" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1sp"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:layout_below="@+id/TvserviceId"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@color/red"
+                        android:layout_marginRight="@dimen/_25sdp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rldoctordetailid"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_60sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="Time : 4:45 PM"
+                        android:textSize="@dimen/_9sdp" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Day : Monday"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Fee : $200"
+                        android:textSize="@dimen/_9sdp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

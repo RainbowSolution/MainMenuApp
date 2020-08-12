@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_clr"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/id_toolbar"
+        layout="@layout/app_bar_main_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Update Profile"
+                android:textColor="@color/black_clr"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_18sdp"></TextView>
+
+            <RelativeLayout
+                android:id="@+id/rlProfilId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civProfileImgEditdocId"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/dummy_user"
+                    app:civ_border_color="@color/blue_clr"
+                    app:civ_border_width="1sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/ic_edit_pencil"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1sp"
+                    app:civ_circle_background_color="@color/white" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:gravity="right"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Profile Pic"
+        android:textColor="@color/black_clr"
+        android:textSize="@dimen/_12sdp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_25sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColorHint="@color/black_clr"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_clr"
+                    android:textColorHint="@color/black_clr"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColorHint="@color/black_clr"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_clr"
+                    android:textColorHint="@color/black_clr"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColorHint="@color/black_clr"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Age"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_clr"
+                    android:textColorHint="@color/black_clr"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reAppListId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sp_gender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="1sp"
+                android:textColor="@color/black_clr"
+                android:textColorHint="@color/black_clr"></androidx.appcompat.widget.AppCompatSpinner>
+
+            <View
+                android:id="@+id/vispId"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/sp_gender"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray_clr"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColorHint="@color/black_clr"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_clr"
+                    android:textColorHint="@color/black_clr"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColorHint="@color/black_clr"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_clr"
+                    android:textColorHint="@color/black_clr"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColorHint="@color/black_clr"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="State"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_clr"
+                    android:textColorHint="@color/black_clr"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColorHint="@color/black_clr"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile No"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_clr"
+                    android:textColorHint="@color/black_clr"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/blue_button_fill"
+            android:text="Save And Exit"
+            android:textAllCaps="false"
+            android:textColor="@color/white_clr"
+            android:textSize="@dimen/_12sdp"></Button>
+
+        <Button
+            android:id="@+id/btn_deletaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/red_button_fill"
+            android:text="Delete Your Account"
+            android:textAllCaps="false"
+            android:textColor="@color/white_clr"
+            android:textSize="@dimen/_12sdp"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>

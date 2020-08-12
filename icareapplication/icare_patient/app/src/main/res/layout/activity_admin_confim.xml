@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_check_circle"></ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waiting For Admin Confirmation"
+            android:textColor="@color/black_clr"
+            android:textSize="@dimen/_22sdp"></TextView>
+
+        <View
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/red_clr"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="3dp">
+        </View>
+
+        <TextView
+            android:paddingLeft="@dimen/_40sdp"
+            android:paddingRight="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Lorem ipsum, or lipsum as it is is dd in laying out print,"
+            android:textColor="@color/gray_clr"
+            android:textSize="@dimen/_12sdp"></TextView>
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/blue_button_fill"
+            android:text="Refresh"
+            android:textAllCaps="false"
+            android:textColor="@color/white_clr"
+            android:textFontWeight="600"
+            android:textSize="@dimen/_12sdp"></Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

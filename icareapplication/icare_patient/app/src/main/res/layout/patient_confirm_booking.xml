@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_clr"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_toolbar"
+        layout="@layout/app_bar_main_back">
+    </include>
+
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:paddingBottom="@dimen/_150sdp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:padding="@dimen/_10sdp"
+                android:id="@+id/ooo"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_confirmation_img"></ImageView>
+
+
+        <TextView
+            android:id="@+id/ww"
+            android:layout_below="@+id/ooo"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textFontWeight="600"
+            android:text="Thanks For booking!"
+            android:textColor="@color/black_clr"
+            android:textSize="@dimen/_17sdp"></TextView>
+
+        <TextView
+            android:layout_below="@+id/ww"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="You booked an appointment with Erick su november 2018 at 2 PM"
+            android:textColor="@color/gray_clr"
+            android:textSize="@dimen/_12sdp"></TextView>
+
+        </RelativeLayout>
+
+            <Button
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btn_backbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_button_fill"
+                android:text="Back To My Appointment"
+                android:textAllCaps="false"
+                android:textColor="@color/white_clr"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_12sdp"></Button>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
